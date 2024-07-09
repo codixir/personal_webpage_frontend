@@ -1,0 +1,32 @@
+.container {
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 24px;
+}
+
+header, footer {
+    flex-grow: 0;
+    width: 100%;
+    text-align: center;    
+}
+
+section {
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.list-items {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-items > li:not(:last-child) {
+    padding-left: 0;
+    margin-bottom: 24px;
+}
